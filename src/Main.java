@@ -20,6 +20,7 @@ public class Main {
 
     public static void main(String[] args)
     {
+        ///////////////////////////////DAY1
         // Exe1
         int a = 500;
         short b = 10;
@@ -67,5 +68,32 @@ public class Main {
         Employee john = new Employee("John", "EY", "NYC");
         System.out.println("");
         System.out.println(john.sayHello());
+
+        /////////////////////////DAY2
+        Account account = new Account();
+        // Change this line to chose your service
+        String input = "Withdraw Money";
+        switch(input){
+            case "Account Balance" :
+                System.out.println("Account Balance:");
+                System.out.println("$"+account.getBalance());
+                break;
+            case "Deposit Money" :
+                System.out.println("Deposit Money:");
+                // change num there
+                account.deposit(5.5);
+                break;
+            case "Withdraw Money" :
+                System.out.println("Withdraw Money");
+                // change num there
+                account.withdraw(5.00);
+                break;
+            case "Exit" :
+                System.out.println("Exit");
+                break;
+            default :
+                System.out.println("Please type in current service name");
+        }
+
     }
 }
