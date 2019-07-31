@@ -1,3 +1,5 @@
+//package main.java;
+
 public class Main {
 
     public static void as1 (int a, int b){
@@ -72,23 +74,23 @@ public class Main {
         /////////////////////////DAY2
         Account account = new Account();
         // Change this line to chose your service
-        String input = "Withdraw Money";
+        int input = 1;
         switch(input){
-            case "Account Balance" :
+            case 1 :
                 System.out.println("Account Balance:");
                 System.out.println("$"+account.getBalance());
                 break;
-            case "Deposit Money" :
+            case 2:
                 System.out.println("Deposit Money:");
                 // change num there
                 account.deposit(5.5);
                 break;
-            case "Withdraw Money" :
+            case 3:
                 System.out.println("Withdraw Money");
                 // change num there
                 account.withdraw(5.00);
                 break;
-            case "Exit" :
+            case 4:
                 System.out.println("Exit");
                 break;
             default :
